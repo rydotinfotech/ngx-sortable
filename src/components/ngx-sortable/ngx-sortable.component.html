@@ -2,8 +2,8 @@
   <div class="sortable-header" *ngIf="showHeader">
     <label class="sortable-name">{{name}}</label>
     <div class="sortable-buttons">
-      <button (click)="moveUp()" [disabled]="!selectedItem" title="Move Up">&#8679;</button>
-      <button (click)="moveDown()" [disabled]="!selectedItem" title="Move Down">&#8681;</button>
+      <button type="button" (click)="moveUp()" [disabled]="!selectedItem" title="Move Up">&#8679;</button>
+      <button type="button" (click)="moveDown()" [disabled]="!selectedItem" title="Move Down">&#8681;</button>
     </div>
   </div>
   <ul class="sortable-list" [style.height]='listStyle.height'>
